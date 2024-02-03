@@ -109,7 +109,7 @@ let hole2;
 let hole3;
 
 function preload() {
-  qteklogo = loadImage("pics/QTEK.gif");
+  qteklogo = loadImage("data/QTEK.gif");
   font = loadFont("oswald.ttf");
 
   fetch("data/QtekBOM.xlsx")
@@ -158,29 +158,29 @@ function setup() {
   frameRate(15);
   counter = new Count(0, 100);
   counter.start();
-  BPpic = loadImage("pics/backplate.jpg");
-  Doorpic = loadImage("pics/door.jpg");
-  Bulkhead = loadImage("pics/bulkhead3.jpg");
-  checkmark = loadImage("pics/checkmark.png");
-  xmark = loadImage("pics/xmark.png");
+  BPpic = loadImage("data/backplate.jpg");
+  Doorpic = loadImage("data/door.jpg");
+  Bulkhead = loadImage("data/bulkhead3.jpg");
+  checkmark = loadImage("data/checkmark.png");
+  xmark = loadImage("data/xmark.png");
 
-  terminalblock = loadImage("pics/terminalblock.jpg");
-  terminalblock2 = loadImage("pics/terminalblock2.jpg");
-  inventory1 = loadImage("pics/enclosure.jpg");
-  inventory2 = loadImage("pics/layout.jpg");
-  inventory3 = loadImage("pics/hmi.jpg");
-  inventory4 = loadImage("pics/cables.jpg");
-  inventory5 = loadImage("pics/etc.jpg");
-  wirechart1 = loadImage("pics/bulkhead5.jpg");
-  contactor = loadImage("pics/contactors2.jpg");
-  contactorbig = loadImage("pics/contactors.jpg");
-  relay1 = loadImage("pics/relay2.jpg");
-  safety1 = loadImage("pics/safety1.jpg");
-  relaybig = loadImage("pics/relay1.jpg");
-  safetybig = loadImage("pics/safety2.jpg");
-  cablelayout = loadImage("pics/cablelayout.jpg");
-  hole2 = loadImage("pics/hole2.jpg");
-  hole3 = loadImage("pics/hole3.jpg");
+  terminalblock = loadImage("data/terminalblock.jpg");
+  terminalblock2 = loadImage("data/terminalblock2.jpg");
+  inventory1 = loadImage("data/enclosure.jpg");
+  inventory2 = loadImage("data/layout.jpg");
+  inventory3 = loadImage("data/hmi.jpg");
+  inventory4 = loadImage("data/cables.jpg");
+  inventory5 = loadImage("data/etc.jpg");
+  wirechart1 = loadImage("data/bulkhead5.jpg");
+  contactor = loadImage("data/contactors2.jpg");
+  contactorbig = loadImage("data/contactors.jpg");
+  relay1 = loadImage("data/relay2.jpg");
+  safety1 = loadImage("data/safety1.jpg");
+  relaybig = loadImage("data/relay1.jpg");
+  safetybig = loadImage("data/safety2.jpg");
+  cablelayout = loadImage("data/cablelayout.jpg");
+  hole2 = loadImage("data/hole2.jpg");
+  hole3 = loadImage("data/hole3.jpg");
 }
 function draw() {
   background("white");
@@ -847,7 +847,7 @@ function mouseClicked() {
     if (isMouseInsideText(message, messageX, messageY)) {
       //  menu = false;
       //window.open('http://www.chriscalver.com/', '_blank');
-      // window.open('/pics/QTEK.gif', '_blank');
+      // window.open('/data/QTEK.gif', '_blank');
       // window.open('data/Wirechart.pdf', '_blank');
       inventory = true;
       menu = false;
@@ -917,14 +917,14 @@ function mouseClicked() {
     }
 
     if (mouseX > 1015 && mouseX < 1090 && mouseY > 78 && mouseY < 200) {
-      window.open("pics/safety2.jpg", "_blank");
+      window.open("data/safety2.jpg", "_blank");
     }
     if (mouseX > 925 && mouseX < 1000 && mouseY > 78 && mouseY < 200) {
-      window.open("pics/relay1.jpg", "_blank");
+      window.open("data/relay1.jpg", "_blank");
     }
     if (mouseX > 820 && mouseX < 910 && mouseY > 78 && mouseY < 200) {
       // image(contactorbig, 300, 463, contactorbig.width / 2, contactorbig.height / 2);
-      window.open("pics/contactors.jpg", "_blank");
+      window.open("data/contactors.jpg", "_blank");
     }
     if (mouseX > 840 && mouseX < 900 && mouseY > 210 && mouseY < 235) {
       wirecharts = false;
@@ -933,7 +933,7 @@ function mouseClicked() {
       removeElements();
       //  print();
       // image(contactorbig, 300, 463, contactorbig.width / 2, contactorbig.height / 2);
-      //  window.open('pics/contactors.jpg', '_blank');
+      //  window.open('data/contactors.jpg', '_blank');
     }
 
     if (mouseX > 930 && mouseX < 980 && mouseY > 210 && mouseY < 235) {
@@ -943,7 +943,7 @@ function mouseClicked() {
       //  removeElements();
       //  print();
       // image(contactorbig, 300, 463, contactorbig.width / 2, contactorbig.height / 2);
-      //  window.open('pics/contactors.jpg', '_blank');
+      //  window.open('data/contactors.jpg', '_blank');
     }
 
     if (mouseX > 1025 && mouseX < 1080 && mouseY > 210 && mouseY < 235) {
@@ -953,7 +953,7 @@ function mouseClicked() {
       //  removeElements();
       //  print();
       // image(contactorbig, 300, 463, contactorbig.width / 2, contactorbig.height / 2);
-      //  window.open('pics/contactors.jpg', '_blank');
+      //  window.open('data/contactors.jpg', '_blank');
     }
 
     // if (mouseX > 410 && mouseX < 479 && mouseY > 320 && mouseY < 380) {
@@ -963,7 +963,7 @@ function mouseClicked() {
     //     //  removeElements();
     //     //  print();
     //     // image(contactorbig, 300, 463, contactorbig.width / 2, contactorbig.height / 2);
-    //     //  window.open('pics/contactors.jpg', '_blank');
+    //     //  window.open('data/contactors.jpg', '_blank');
     // }
 
     // if (mouseX > 517 && mouseX < 588 && mouseY > 320 && mouseY < 400) {
@@ -973,7 +973,7 @@ function mouseClicked() {
     //     //  removeElements();
     //     //  print();
     //     // image(contactorbig, 300, 463, contactorbig.width / 2, contactorbig.height / 2);
-    //     //  window.open('pics/contactors.jpg', '_blank');
+    //     //  window.open('data/contactors.jpg', '_blank');
     // }
     console.log(pic);
     console.log("X " + mouseX);
