@@ -857,7 +857,10 @@ function mouseClicked() {
       menu = false;
     }
     if (isMouseInsideText(message3, message3X, message3Y)) {
-      window.open("data/Electrical.pdf", "_blank");
+      window.open(
+        "https://chriscalver.com/projects/QTEKfinal/data/Electrical.pdf",
+        "_blank"
+      );
     }
     if (isMouseInsideText(message4, message4X, message4Y)) {
       TBlayout = true;
